@@ -1,8 +1,8 @@
 # 双平台空对空目标定位与跟踪仿真环境
 
-![gazebo_sideview](/home/fbh/图片/gazebo_sideview.png)
+![gazebo_sideview](/gazebo_sideview.png)
 
-![simulation_rviz](/home/fbh/图片/simulation_rviz.png)
+![simulation_rviz](/simulation_rviz.png)
 
 ## Usage
 
