@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+
+<launch>
+   <arg name="model" default="$(find hector_quadrotor_description)/urdf/quadrotor.gazebo.xacro" />
+
+   <group ns="obs_01">
+     <include file="$(find hector_quadrotor_gazebo)/launch/spawn_quadrotor.launch">
+       <arg name="name" value="obs_01" />
+       <arg name="tf_prefix" value="obs_01" />
+       <arg name="model" value="$(arg model)" />
+       <!-- <arg name="x" value="-1.5" />
+       <arg name="y" value="-15.0" /> -->
+       <arg name="x" value="-1.0" />
+       <arg name="y" value="-16.2" />
+       <arg name="z" value="0.3" />
+       <arg name="Y" value="1.57" />
+
+     </include>
+   </group>
+
+   <group ns="obs_02">
+     <include file="$(find hector_quadrotor_gazebo)/launch/spawn_quadrotor.launch">
+       <arg name="name" value="obs_02" />
+       <arg name="tf_prefix" value="obs_02" />
+       <arg name="model" value="$(arg model)" />
+       <!-- <arg name="x" value="5.5" />
+       <arg name="y" value="-15.0" /> -->
+       <arg name="x" value="7.0" />
+       <arg name="y" value="-16.2" />
+       <arg name="z" value="0.3" />
+       <arg name="Y" value="1.57" />
+     </include>
+   </group>
+
+   <group ns="target_01">
+     <include file="$(find hector_quadrotor_gazebo)/launch/spawn_quadrotor.launch">
+       <arg name="name" value="target_01" />
+       <arg name="tf_prefix" value="target_01" />
+       <arg name="model" value="$(find hector_quadrotor_description)/urdf/quadrotor.gazebo.xacro" />
+       <arg name="x" value="0.5" />
+       <arg name="y" value="-10.0" />
+       <arg name="z" value="0.3" />
+       <arg name="Y" value="1.57" />
+     </include>
+   </group>
+
+   <group ns="target_02">
+     <include file="$(find hector_quadrotor_gazebo)/launch/spawn_quadrotor.launch">
+       <arg name="name" value="target_02" />
+       <arg name="tf_prefix" value="target_02" />
+       <arg name="model" value="$(find hector_quadrotor_description)/urdf/quadrotor.gazebo.xacro" />
+       <arg name="x" value="4.5" />
+       <arg name="y" value="-10.0" />
+       <arg name="z" value="0.3" />
+       <arg name="Y" value="1.57" />
+     </include>
+   </group>
+
+   <group ns="target_03">
+     <include file="$(find hector_quadrotor_gazebo)/launch/spawn_quadrotor.launch">
+       <arg name="name" value="target_03" />
+       <arg name="tf_prefix" value="target_03" />
+       <arg name="model" value="$(find hector_quadrotor_description)/urdf/quadrotor.gazebo.xacro" />
+       <arg name="x" value="2.0" />
+       <arg name="y" value="-6.0" />
+       <arg name="z" value="0.3" />
+       <arg name="Y" value="3.14" />
+     </include>
+   </group>
+
+</launch>
+

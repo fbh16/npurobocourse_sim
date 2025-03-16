@@ -1,0 +1,23 @@
+<launch>
+
+    <arg name = "drone_name" default="obs_03" />
+    <!-- <group ns="$(arg drone_name)"> -->
+        
+        <!-- <node pkg="rmtt_teleop" name="target_01_teleop_key" type="rmtt_teleop_key.py" output="screen">
+            <param name="speed"     value="0.2" />
+            <param name="turn"      value="0.2" />
+            <remap from="/land"     to="$(arg drone_name)/land" />
+            <remap from="/takeoff"  to="$(arg drone_name)/takeoff" />
+            <remap from="/cmd_vel"  to="$(arg drone_name)/cmd_vel" />
+        </node> -->
+
+        <!-- path tracking -->
+        <node pkg="observe_controller" name="obs_03_path_tracking" type="obs_03_motion.py" output="screen">
+            <remap from="/cmd_vel" to="$(arg drone_name)/cmd_vel" />
+            <remap from="/land"    to="$(arg drone_name)/land" />
+            <remap from="/takeoff" to="$(arg drone_name)/takeoff" />
+            <!-- <remap from="/vrpn_client_node/obs_03/pose" to="/vrpn_client_node/$(arg drone_name)/pose" /> -->
+        </node>
+
+    <!-- </group> -->
+</launch>

@@ -1,0 +1,14 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/fbh/quickly/devel/lib/python3/dist-packages",
+        "/home/fbh/zl/devel/lib/python3/dist-packages",
+        "/home/fbh/part1and2/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/fbh/quickly/devel/lib/python3/dist-packages",
+        "/home/fbh/zl/devel/lib/python3/dist-packages",
+        "/home/fbh/part1and2/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ]
+}

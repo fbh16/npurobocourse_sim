@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g  -shared -Wl,-soname,libgmockd.so -o ../lib/libgmockd.so CMakeFiles/gmock.dir/src/gmock-all.cc.o  -Wl,-rpath,/home/fbh/final_bag_ws/src/target_drone_controller/build/gtest/lib ../lib/libgtestd.so -lpthread 

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <launch>
-  <arg name="world" default="worlds/empty.world"/>
+  <arg name="world" default="/home/fbh/npurobocourse_sim/src/my_worlds/rolling_landscape_120m.world"/>
   <arg name="gui" default="true"/>
   <arg name="args" default=""/>
   
@@ -13,6 +13,5 @@
   <group if="$(arg gui)">
     <node name="gazebo_gui" pkg="gazebo_ros" type="gzclient" respawn="false" output="screen"/>
   </group>
-
 
 </launch>

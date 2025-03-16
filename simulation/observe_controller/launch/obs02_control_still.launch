@@ -1,0 +1,3 @@
+<launch>
+  <node pkg="observe_controller" type="obs_02.py" name="obs_02" output="screen"/>
+</launch>

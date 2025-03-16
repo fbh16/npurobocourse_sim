@@ -1,0 +1,9 @@
+<launch>
+
+    <arg name = "drone_name" default="obs_01" />
+        <!-- path tracking -->
+        <node pkg="observe_controller" name="obs_01_path_tracking" type="obs_01_motion.py" output="screen">
+            <remap from="/cmd_vel" to="$(arg drone_name)/cmd_vel" />
+        
+        </node>
+</launch>

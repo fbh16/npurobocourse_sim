@@ -1,0 +1,10 @@
+<launch>
+
+    <arg name = "drone_name" default="target_02" />
+    <node pkg="target_drone_controller" name="$(arg drone_name)_path_tracking" type="target_02_motion.py" output="screen">
+        <param name = "drone_name" type="string" value="$(arg drone_name)" />
+        <remap from = "/cmd_vel" to="$(arg drone_name)/cmd_vel" />
+        <remap from = "/vrpn_client_node/target_01/pose" to="$(arg drone_name)/ground_truth_to_tf/pose" />
+    </node>
+
+</launch>

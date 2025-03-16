@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <!-- Start Gazebo with wg world running in (max) realtime -->
+  <!-- <include file="$(find hector_gazebo_worlds)/launch/rolling_landscape_120m.launch"/> -->
+  <include file="$(find hector_gazebo_worlds)/launch/start.launch"/>
+
+  <!-- Spawn simulated quadrotor uav -->
+  <include file="$(find hector_quadrotor_gazebo)/launch/spawn_quadrotors_mdmot.launch" >
+    <arg name="model" value="$(find hector_quadrotor_description)/urdf/quadrotor_with_cam.gazebo.xacro"/>
+  </include>
+
+  <!-- Start rviz visualization with preset config -->
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find hector_quadrotor_demo)/rviz_cfg/simulation.rviz"/>
+
+</launch>
+
+<!-- /home/fbh/npurobocourse_sim/src/hector-quadrotor-noetic/hector_quadrotor/hector_quadrotor_gazebo/launch/spawn_quadrotors_mdmot.launch -->
+<!-- /home/fbh/npurobocourse_sim/src/hector-quadrotor-noetic/hector_gazebo/hector_gazebo_worlds/launch/start.launch -->
+<!-- origin xyz="0.05 0.0 -0.06" rpy="0 0 0" -->

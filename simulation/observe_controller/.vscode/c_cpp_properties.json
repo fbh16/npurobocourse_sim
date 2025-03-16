@@ -1,0 +1,29 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/fbh/quickly/devel/include/**",
+        "/home/fbh/zl/devel/include/**",
+        "/home/fbh/part1and2/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/fbh/quickly/src/calibration/include/**",
+        "/home/fbh/zl/src/multi_csrt_kf/include/**",
+        "/home/fbh/quickly/src/multi_goals/include/**",
+        "/home/fbh/part1and2/src/projection_search/include/**",
+        "/home/fbh/part1and2/src/sort/include/**",
+        "/home/fbh/part1and2/src/tri_locaction/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

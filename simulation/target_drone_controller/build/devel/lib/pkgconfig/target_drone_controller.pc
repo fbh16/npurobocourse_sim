@@ -1,0 +1,8 @@
+prefix=/home/fbh/final_bag_ws/src/target_drone_controller/build/devel
+
+Name: target_drone_controller
+Description: Description of target_drone_controller
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
